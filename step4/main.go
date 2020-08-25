@@ -13,9 +13,12 @@ func main(){
 	fmt.Scan(&n)
 
 	items := make([]Item, 0, n)
+	fmt.Printf("len(items): %d\n", len(items))
+	fmt.Printf("cap(items): %d\n", cap(items))
 
 	for i := 0 ; i < cap(items) ; i++{
 		items = inputItem(items)
+		fmt.Printf("len(items): %d\n", len(items))
 	}
 
 	showItems(items)
@@ -42,4 +45,6 @@ func showItems(items []Item) {
 		fmt.Printf("paied %d yen for %s \n", items[i].price, items[i].category)
 	}
 	fmt.Println("==========")
+	fmt.Printf("len(items): %d\n", len(items))
+	fmt.Printf("cap(items): %d\n", cap(items))
 }
