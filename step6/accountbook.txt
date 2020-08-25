@@ -1,0 +1,12 @@
+coffee 100
+cake 200
+ice 300
+note 120
+pencil 190
+tea 260
+shoes 1200
+TV 25000
+key 1230
+phone 120000
+trash 30
+ticket 2340
