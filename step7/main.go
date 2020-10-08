@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	db, err := sql.Open(sqlite.DriverName, "accountbook,db")
+	db, err := sql.Open(sqlite.DriverName, "accountbook.db")
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "error : ", err)
 		os.Exit(1)
